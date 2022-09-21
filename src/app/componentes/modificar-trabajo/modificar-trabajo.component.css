@@ -1,0 +1,22 @@
+a{
+    text-align: center;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+input{
+    background-color: azure;
+    margin-bottom: 10px;
+    border: solid 2px rgba(57, 57, 218, 0.507);
+    
+}
+h1{
+    color: blue;
+}
+form{
+    
+    margin-top: 0;
+    background-image: url("src/assets/util/EXP.jpg");
+}

@@ -1,0 +1,12 @@
+.row{
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin: auto;
+    padding: 20px
+}
+span{
+    color:rgb(253, 72, 0);
+    text-shadow: 0 3px 8px rgb(255, 32, 3);
+}

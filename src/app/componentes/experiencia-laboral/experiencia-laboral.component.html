@@ -1,0 +1,41 @@
+<section id="experiencias">
+    <h1><span>──</span> Experiencia Laboral <span>──</span></h1>
+    <div>
+    <button (click)="agregarEstudio()" class="btn btn-dark" title="agregar nuevo estudio"><i class="fa-solid fa-circle-plus"></i></button>
+    </div>
+<div class="container">
+    <div *ngFor="let trabajo of trabajoList">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                <h4>{{trabajo.empresa}}</h4>
+                </div>
+                <div class="card-body">
+                    
+                    <img [src]="trabajo.imagen" widht="250" height="150" class="rounded float-end" alt="">
+                    
+                    <h5 class="card-title">{{trabajo.puesto}}</h5>
+                    
+                    <p class="card-text">{{trabajo.descripcion}}</p>
+                    
+                    <div>
+                    <a [href]="trabajo.web" class="btn btn-primary">Sitio Web</a>
+                    
+                    <button (click)="modificar(trabajo.id)" class="btn btn-secondary" title="modificar"><i class="fa-solid fa-pen"></i></button>
+                    
+                    <button (click)="delete(trabajo.id)" class="btn btn-danger" title="eliminar"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div class="card-footer-second">
+                    <p><time>{{trabajo.comienzo}}</time> - <time>{{trabajo.fin}}</time></p>
+                </div>
+                <!--<div class="card-footer-tercero">
+                    <p>Id: {{trabajo.id}}</p>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</section>

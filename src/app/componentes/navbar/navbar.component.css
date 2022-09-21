@@ -1,0 +1,31 @@
+section{
+    padding: 0;
+    background: linear-gradient(-90deg, rgba(0,0,0,0.9), rgb(92, 92, 92));
+}
+h3{
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+}
+.nav-link:hover{
+    background: linear-gradient(-90deg, rgba(233, 5, 5, 0.4), rgb(253, 72, 0));
+    border-radius: 10px;
+    padding: 10px;
+    text-shadow: 2px 3px 6px black;
+    transform: scale(1.1);
+    box-shadow: 2px 5px 10px rgb(44, 44, 44);
+}
+.navbar-brand{
+    padding: 0;
+    
+}
+.navbar-brand img{
+    width: 150px;
+    height: auto;
+}
+li{
+    cursor:pointer;
+}
+li:hover{
+    cursor:pointer;
+}
+
+

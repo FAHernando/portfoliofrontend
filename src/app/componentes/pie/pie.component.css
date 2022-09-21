@@ -1,0 +1,10 @@
+footer{
+    background: rgb(22, 22, 22);
+    width: 100%;
+    text-align: center;
+}
+.col img{
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}

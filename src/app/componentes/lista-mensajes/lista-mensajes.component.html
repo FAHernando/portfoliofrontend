@@ -1,0 +1,16 @@
+<div class="card" *ngFor="let contacto of contactoList">
+    <img src="assets/util/EmailMensajes.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><b>{{contacto.nombre}}</b></h5>
+      <p class="card-text">{{contacto.mensaje}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><b>{{contacto.email}}</b></li>
+      <li class="list-group-item"><b>261-{{contacto.telefono}}</b></li>
+      <!--<li class="list-group-item">Id {{contacto.id}}</li>-->
+    </ul>
+    <div class="card-body">
+      <button (click)="volver()" type="submit" class="btn btn-primary">Volver</button>
+      <button (click)="eliminar(contacto.id)" type="submit" class="btn btn-danger">Borrar</button>
+    </div>
+  </div>

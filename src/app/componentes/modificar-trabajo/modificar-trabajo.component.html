@@ -1,0 +1,39 @@
+
+    <form id="agregar-trabajo" [formGroup]="formTrabajo" (submit)="postForm(formTrabajo.value, id)">
+        <a name="contacto"><h1><b>Modificar Experiencia Laboral</b></h1></a>
+
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Nombre Empresa:</b></label>
+            <input formControlName="empresa" data-bs-toggle="mensaje" title="Completa el campo" type="text"  placeholder="empresa">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Puesto:</b></label>
+            <input formControlName="puesto" data-bs-toggle="mensaje" title="Completa el campo" type="text"  placeholder="puesto">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Descripción:</b></label>
+            <input formControlName="descripcion" data-bs-toggle="mensaje" title="Completa el campo" type="text" placeholder="descripcion">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Año comienzo:</b></label>
+            <input formControlName="comienzo" data-bs-toggle="mensaje" title="Completa el campo" type="number" placeholder="Año Comienzo">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Año finalización:</b></label>
+            <input formControlName="fin" data-bs-toggle="mensaje" title="Completa el campo" type="number" placeholder="Año Finalización">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Dirección Web:</b></label>
+            <input formControlName="web" data-bs-toggle="mensaje" title="Completa el campo" type="text" placeholder="Web">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Logo:</b></label>
+            <input formControlName="imagen" data-bs-toggle="mensaje" title="Completa el campo" type="text" placeholder="Imagen">
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="reset" class="btn btn-secondary">Borrar</button> 
+        <button (click)="volver()" type="button" class="btn btn-dark">Volver</button>
+    </form>
+
+

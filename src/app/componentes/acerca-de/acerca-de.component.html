@@ -1,0 +1,55 @@
+<section id="informacion">
+    <h1><span>───</span> Sobre mí <span>───</span></h1>
+<div class="container" *ngFor='let apiRest of api'>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header-1">
+                    <img [src]="miPorfolio.cardDirection" alt="">
+                </div>
+                <div class="card-body">
+                    <i data-bs-toggle="mesaje" title="Ubicación" class="fa-solid fa-house"></i>
+                    <h5 class="card-title">── UBICACIÓN ──</h5>
+                    <h5>{{apiRest.direccion}}</h5>
+                    <p class="card-text"></p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header-1">
+                    <img [src]="miPorfolio.aboutMe" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">¡¡HOLA!!</h5>
+                    <p class="card-text">Soy Alexis, vivo en Mendoza provincia de Argentina, desde chico que estoy interesado en todo lo referido con la programación 
+                        y la informatica. <br> Tengo 31 años y en este momento me encuentro cursando Desarrollo Web Full Stack.<br>
+                        Mi objetivo es lograr una base solida en la programacion para poder desempeñarme con fluidez en el rubro.<br>
+                        Aún no poseo ningun proyecto para mostrar.</p>
+                    <a href="#inicio" class="btn btn-primary">volver</a>
+                </div>
+                <div class="card-footer-first">
+                    <i  data-bs-toggle="mensaje" title="Facebook (alexiis.r.hernando)" class="fa-brands fa-facebook" alt="facebook"></i>
+                    <i  data-bs-toggle="mensaje" title="Whatsapp ((261)-5197273)" class="fa-brands fa-whatsapp-square"></i>
+                    <i  data-bs-toggle="mensaje" title="Instagram (alexiishernando)" class="fa-brands fa-instagram-square"></i>
+                    <i  data-bs-toggle="mensaje" title="GitHub (FAHernando)" class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header-1">
+                    <img [src]="miPorfolio.cardMail" alt="">
+                </div>
+                <div class="card-body">
+                    <i  data-bs-toggle="mensaje" title="Gmail" class="fa-solid fa-envelope"></i>
+                    <h5 class="card-title">──── EMAIL ────</h5>
+                    <h5>{{apiRest.email}}</h5><!--miPorfolio.email-->
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>

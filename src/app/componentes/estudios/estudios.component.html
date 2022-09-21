@@ -1,0 +1,39 @@
+<section id="estudios">
+    <h1><span>──</span> Nivel Académico <span>──</span></h1>
+    <div>
+    <button (click)="agregarEstudio()" class="btn btn-dark" title="agregar nuevo estudio"><i class="fa-solid fa-circle-plus"></i></button>
+    </div>
+<div class="container">
+    <div *ngFor="let educacion of educacionList">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                <h4>{{educacion.instituto}}</h4>
+                </div>
+                <div class="card-body">
+                    <img [src]="educacion.imagen" widht="250" height="100" class="rounded float-end" alt="">
+
+                    <h5 class="card-title">{{educacion.carrera}}</h5>
+                    
+                    <p class="card-text">{{educacion.grado}}</p>
+                    <div>
+                    <a [href]="educacion.web" class="btn btn-primary">Sitio Web</a>
+                    
+                    <button (click)="modificar(educacion.id)" class="btn btn-secondary" title="modificar"><i class="fa-solid fa-pen"></i></button>
+                    
+                    <button (click)="delete(educacion.id)" class="btn btn-danger" title="eliminar"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                <div class="card-footer-second">
+                    <p><time>{{educacion.comienzo}}</time> - <time>{{educacion.fin}}</time></p>
+                </div>
+                <!--<div class="card-footer-tercero">
+                    <p>Id: {{educacion.id}}</p>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</section>

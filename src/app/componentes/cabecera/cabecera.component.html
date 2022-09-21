@@ -1,0 +1,16 @@
+<header id="inicio">
+    <div class="card bg-dark text-white" *ngFor="let head of header">
+        <img src="assets/util/banner.jpg" class="card-img" alt="...">
+        <div class="card-header-2">
+          <h1 class="card-title"><span>──── </span>{{head.nombre}}<span> ────</span></h1>
+          <h6 class="card-text">{{head.sub}}</h6>
+          <h2 class="card-text"><i class="fa-solid fa-marker"></i>{{head.sobremi}}</h2>   
+        </div>
+        <div class="boton">
+            <a (click)="sobremi()" class="btn btn-primary">Sobre mí</a>
+        </div>
+        <div class="perfil">
+          <img src="assets/util/alexis.jpg" alt="...">
+        </div>
+      </div>
+</header>

@@ -1,0 +1,43 @@
+
+    <form id="agregar" [formGroup]="formEstudio" (submit)="postForm(formEstudio.value, id)">
+        <a name="contacto"><h1><b>Modificar</b></h1></a>
+        
+        <!--<div class="form-example">
+            <label for="exampleFormControlInput1"><b>Id Usuario:</b></label>
+            <input class="form-control" formControlName="id" data-bs-toggle="mensaje" title="Completa el campo" type="text"  placeholder="Id">
+        </div>-->
+
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Nombre Instituto:</b></label>
+            <input formControlName="instituto" data-bs-toggle="mensaje" title="Completa el campo" type="text"  placeholder="Instituto">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Carrera:</b></label>
+            <input formControlName="carrera" data-bs-toggle="mensaje" title="Completa el campo" type="text"  placeholder="Carrera">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Grado:</b></label>
+            <input formControlName="grado" data-bs-toggle="mensaje" title="Completa el campo" type="text" placeholder="Grado">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Año comienzo:</b></label>
+            <input formControlName="comienzo" data-bs-toggle="mensaje" title="Completa el campo" type="number" placeholder="Año Comienzo">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Año finalización:</b></label>
+            <input formControlName="fin" data-bs-toggle="mensaje" title="Completa el campo" type="number" placeholder="Año Finalización">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Dirección Web:</b></label>
+            <input formControlName="web" data-bs-toggle="mensaje" title="Completa el campo" type="text" placeholder="Web">
+        </div>
+        <div class="form-example">
+            <label for="exampleFormControlInput1"><b>Logo:</b></label>
+            <input formControlName="imagen" data-bs-toggle="mensaje" title="Completa el campo" type="text" placeholder="Imagen">
+        </div>
+        <!--<input type="button" value="ENVIAR" id="boton">-->
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="reset" class="btn btn-secondary">Borrar</button> 
+        <button (click)="volver()" type="button" class="btn btn-dark">Volver</button>
+    </form>
+

@@ -1,0 +1,23 @@
+<section>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgba(0,0,0,0)">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="assets/util/argprog.jpg" alt=""></a>
+            <button title="menú" type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menuNavegacion" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-3">
+                    <li (click)="inicio()" data-bs-toggle="mensaje" title="Ir al Inicio" class="nav-item"><a class="nav-link" >Inicio</a></li>
+                    <li (click)="estudio()" data-bs-toggle="mensaje" title="Nivel Académico" class="nav-item"><a class="nav-link" >Nivel Académico</a></li>
+                    <li (click)="exp()" data-bs-toggle="mensaje" title="Biografía" class="nav-item"><a class="nav-link" >Experiencia Laboral</a></li>
+                    <li (click)="contacto()" data-bs-toggle="mensaje" title="Envíe un mensaje" class="nav-item"><a class="nav-link" >Contacto</a></li>
+                    <app-logout></app-logout>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+</div>
+</section>

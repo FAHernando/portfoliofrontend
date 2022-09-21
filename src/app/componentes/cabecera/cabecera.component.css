@@ -1,0 +1,61 @@
+.card{
+    position: relative;
+}
+.card-img{
+    width: auto;
+    height: 570px;
+}
+.card-header-2{
+    box-sizing: border-box;
+    left: 33%;
+    top: 16%;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+}
+span, i{
+    color:rgb(253, 72, 0);
+}
+h1{
+    color:rgb(22, 22, 22);
+    font-size: 3.5rem;
+    margin-top: 15%;
+    text-shadow: 0 5px 25px;
+}
+h2{
+    color:rgb(22, 22, 22);
+    font-size:2rem;
+    margin-top: 25px;
+    text-shadow: 0 5px 25px;
+}
+h6{
+    color:rgb(22, 22, 22);
+    margin-top: 20px;
+}
+.boton{
+    position: absolute;
+    top: 500px;
+    left: 73%;
+}
+.boton .btn:hover{
+    background-color: rgb(177, 51, 2);
+}
+.boton .btn{
+    background-color: rgb(253, 72, 0);
+    border: none;
+    color: black;
+}
+.perfil img{
+    position: absolute;
+    border-radius: 40%;
+    width: 210px;
+    height: 250px;
+    margin-top: -450px;
+    margin-left: 5%;
+    box-shadow: 2px 3px 10px gray;
+}
+@media(max-width: 200px){
+    .perfil img{
+        margin-top: -200px;
+    }
+}

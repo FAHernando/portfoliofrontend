@@ -1,0 +1,22 @@
+<section>
+<form [formGroup]="formContacto" (submit)="enviarData()" id="contacto">
+    <a name="contacto"><h1><span>──</span> Contacto <span>──</span></h1></a>
+    <div class="form-example">
+        <input formControlName="nombre" data-bs-toggle="mensaje" title="Completa el campo" type="text"  placeholder="Nombre">
+    </div>
+    <div class="form-example">
+        <input formControlName="email" data-bs-toggle="mensaje" title="Completa el campo" type="email"  placeholder="Email">
+    </div>
+    <div class="form-example">
+        <input formControlName="telefono" data-bs-toggle="mensaje" title="Completa el campo" type="number" placeholder="Teléfono sin el código de área">
+    </div>
+    <div class="form-example">
+        <textarea formControlName="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+    </div>
+    <!--<input type="button" value="ENVIAR" id="boton">-->
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="reset" class="btn btn-secondary">Borrar</button> 
+    <input (click)="mensajes()" type="button" class="btn btn-dark" value="Ver Mensajes">
+    
+</form>
+</section>

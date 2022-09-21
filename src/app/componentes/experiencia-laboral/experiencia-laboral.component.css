@@ -1,0 +1,82 @@
+
+section{
+    background:rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    margin: auto;
+}
+span{
+    color:rgb(253, 72, 0);
+    text-shadow: 0 3px 8px rgb(255, 32, 3);
+}
+.card{
+    border: none;
+    background:rgba(0, 0, 0, 0);
+    margin-top: 20px;
+}
+.card-header{
+    border-radius: 10px;
+    box-shadow: 2px 5px 15px #646464;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(222, 222, 222);
+    background: linear-gradient(20deg, rgb(133, 126, 231), rgb(72, 60, 240), rgb(41, 7, 165));
+    text-shadow: 0 0 8px black;
+    margin-bottom: 10px;
+}
+.card-body{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px #646464;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.card-body:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 3px 20px rgba(50, 3, 179, 0.767);
+}
+.card-footer-second{
+    background: linear-gradient(20deg, rgb(160, 160, 160), rgb(75, 75, 75), rgb(99, 99, 99));
+    color:white;
+    text-align: center;
+    padding-top: 10px;
+
+    font-size: 1.2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 3px 10px #646464;
+    width: 250px;
+    margin: auto;
+}
+.fa-solid.fa-circle-plus{
+    font-size: 25px;
+}
+.btn-secondary:hover{
+    background: rgb(41, 41, 41);
+}
+.btn-danger:hover{
+    background: red;
+}
+.btn-primary:hover{
+    background: blue;
+}
+.float-end{
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 2px rgba(0, 0, 255, 0.267);
+    box-shadow: 1px 1px 15px rgb(100, 100, 100);
+}
+
+/*.card-footer-tercero{
+    background: rgb(107, 107, 107);
+    text-align: center;
+    font-size: 15px;
+    color:white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px #646464; 
+    width: 100px;
+    margin: auto;
+    padding-top: 10px;
+}*/

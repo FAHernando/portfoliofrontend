@@ -1,0 +1,60 @@
+<div class="card">
+    <h2>Registro de usuario</h2>
+</div>
+<div class="container">
+<form [formGroup]="formReg" (ngSubmit)="onSubmit()" errorTailor>
+
+    <div class="mb-3">
+        <label class="form-label" for="email"><b>Correo Electrónico:</b></label>
+        <input type="text" class="form-control" placeholder="*campo obligatorio" formControlName="email"
+        [controlErrorsTpl]="emailError">
+        
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="password"><b>Contraseña:</b></label>
+        <input type="password" class="form-control" formControlName="password" placeholder="*campo obligatorio"
+        [controlErrorsTpl]="passwordError">
+       
+    </div>
+
+    <div>
+        <input title="check" type="checkbox" formControlName="terminos" [controlErrorsTpl]="mensajeError">
+        <label for="terminos">Aceptar Términos y Condiciones, y Políticas de Privacidad</label>        
+    </div>
+
+    <input type="submit" value="Enviar" class="button" [disabled]="formReg.invalid">
+    
+    <p class="separador">_______________________________</p>
+    <p>¿Ya tienes una cuenta?<a class="link" (click)="onClick()"> Login</a></p>
+</form>
+
+</div>
+
+<!--<div>
+    Valido: {{formReg.valid | json}}
+</div>-->
+
+
+<!-- mensaje de error para el email-->
+<ng-template let-error let-text="text" #emailError>
+    <!--{{error | json}} {{text}}-->
+    <div *ngIf="error">
+        <i>Debe ser una dirección de correo válida.</i>
+    </div>
+</ng-template>
+
+<!-- mensaje de error para el password-->
+<ng-template let-error let-text="text" #passwordError>
+    <!--{{error | json}} {{text}}-->
+    <div *ngIf="error">
+        <i>La contraseña debe contener 6 o más carácteres.</i>
+    </div>
+</ng-template>
+
+
+<!-- mensaje de error para el checkbox-->
+<ng-template let-error let-text="text" #mensajeError>
+    <!--{{error | json}} {{text}}-->
+    
+</ng-template>

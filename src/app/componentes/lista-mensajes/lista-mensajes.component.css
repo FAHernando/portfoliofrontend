@@ -1,0 +1,19 @@
+.card{
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+}
+.card-img-top{
+    height: 250px;
+    width: 350px;
+    margin: auto;
+}
+.list-group-item{
+    background-color: rgb(211, 211, 211);
+}
+.card-text{
+    width: 500px;
+    margin: auto;
+    border: solid 2px gray;
+    border-radius: 5px;
+    padding: 10px;
+}
