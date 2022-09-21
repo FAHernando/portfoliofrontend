@@ -1,0 +1,40 @@
+{
+    "name":"Hernando Fabian Alexis",
+    "student":"Estudiante de Desarrollo Web",
+    "image":"./assets/util/perfil.png",
+    "headerImage": "./assets/util/carrusel.jpg",
+    "programImg":"./assets/util/arg.jpg",
+
+    "education":[
+        {
+            "school": "Instituto Santa María de los Ángeles",
+            "title": "Economía y Gestión de las Organizaciones",
+            "start": "1995",
+            "end": "2008",
+            "img1": "assets/util/S12.jpg",
+            "img2": "assets/util/ISMA1.jpg",
+            "img3": "assets/util/ISMA2.jpg",
+            "img4": "assets/util/S.jpg",
+            "web": "https://www.ismamendoza.edu.ar",
+            "about": "Primaria y Secundaria completa"
+        },
+
+        {
+            "school": "Escuelas NEWTON",
+            "title": "Armado y Reparación de PCs y Notebooks",
+            "start": "2010",
+            "end": "2011",
+            "img1": "assets/util/N0.jpg",
+            "img4": "assets/util/N.png",
+            "img3": "assets/util/N2.jpg",
+            "web": "http://www.escuelasnewton.com.ar",
+            "about": "Terciario"
+        }
+    ],
+
+    "cardMail": "assets/util/gmail.jpg",
+    "cardDirection": "assets/util/mendoza.jpg",
+    "aboutMe": "assets/util/ruloper2.jpg",
+    "email": "alexishernando91@gmail.com",
+    "ubicacion": "Godoy Cruz - Mendoza, Argentina"
+}
