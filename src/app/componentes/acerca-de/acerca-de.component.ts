@@ -21,7 +21,7 @@ export class AcercaDeComponent implements OnInit {
     this.cargarData();
   }
   cargarData(): void {
-    this.persona.get(`https://portfoliobackendweb.herokuapp.com/ver/personas`)
+    this.persona.get(`https://heroku-argentinaprograma.herokuapp.com/ver/personas`)
     .subscribe((data:any) => {
       this.api = data;
     })

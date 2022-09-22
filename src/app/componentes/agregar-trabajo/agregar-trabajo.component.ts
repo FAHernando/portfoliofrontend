@@ -44,7 +44,7 @@ export class AgregarTrabajoComponent implements OnInit {
     this.router.navigate(['main'])
   }
   public enviarData(){
-    this.trabajoService.post('https://portfoliobackendweb.herokuapp.com/crear/trabajo',
+    this.trabajoService.post('https://heroku-argentinaprograma.herokuapp.com/crear/trabajo',
     { 
       empresa:this.formTrabajo.value.empresa,
       puesto:this.formTrabajo.value.puesto,

@@ -14,10 +14,10 @@ export class TrabajoService {
   private urlPost = /*'https://crossorigin.me/*//*'http://localhost:8080/modificar/trabajo/'
   private apiServerUrl= 'http://localhost:8080'*/
 
-  private apiUrl = 'https://portfoliobackendweb.herokuapp.com/delete/trabajo/'
-  private urlApi = 'https://portfoliobackendweb.herokuapp.com/ver/trabajo/'
-  private urlPost = 'https://portfoliobackendweb.herokuapp.com/modificar/trabajo/'
-  private apiServerUrl = 'https://portfoliobackendweb.herokuapp.com'
+  private apiUrl = 'https://heroku-argentinaprograma.herokuapp.com/delete/trabajo/'
+  private urlApi = 'https://heroku-argentinaprograma.herokuapp.com/ver/trabajo/'
+  private urlPost = 'https://heroku-argentinaprograma.herokuapp.com/modificar/trabajo/'
+  private apiServerUrl = 'https://heroku-argentinaprograma.herokuapp.com'
 
 
   constructor(private http:HttpClient) { }
