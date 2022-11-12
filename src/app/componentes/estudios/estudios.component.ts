@@ -27,7 +27,7 @@ export class EstudiosComponent implements OnInit {
     this.cargarData();
   }
   cargarData(): void {
-    this.estudios.get(`http://localhost:8080/ver/estudios`)
+    this.estudios.get('https://heroku-argentinaprograma.herokuapp.com/ver/estudios')
     .subscribe((data:any) => {
       this.educacionList = data;
     })

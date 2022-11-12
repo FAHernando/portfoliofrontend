@@ -47,13 +47,13 @@ export class InicioComponent implements OnInit {
     })
   }
   cargarData(): void {
-    this.trabajoService.get(`http://localhost:8080/ver/trabajos`)
+    this.trabajoService.get('https://heroku-argentinaprograma.herokuapp.com/ver/trabajos') //'http://localhost:8080/ver/trabajos'
     .subscribe((data:any) => {
       this.trabajoList = data;
     })
   }
   cargarData2(): void {
-    this.estudios.get(`http://localhost:8080/ver/estudios`)
+    this.estudios.get('https://heroku-argentinaprograma.herokuapp.com/ver/estudios') //'http://localhost:8080/ver/estudios'
     .subscribe((data:any) => {
       this.educacionList = data;
     })

@@ -44,7 +44,7 @@ export class AgregarEstudioComponent implements OnInit {
     this.router.navigate(['main'])
   }
   public enviarData(){
-    this.estudios.post('http://localhost:8080/new/estudio',
+    this.estudios.post('https://heroku-argentinaprograma.herokuapp.com/new/estudio',
     { 
       instituto:this.formEstudio.value.instituto,
       carrera:this.formEstudio.value.carrera,
