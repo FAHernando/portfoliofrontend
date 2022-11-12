@@ -4,11 +4,11 @@ import { Router } from '@angular/router';
 import { PortfolioAlexisService } from 'src/app/servicios/portfolio-alexis.service'
 
 @Component({
-  selector: 'app-logout',
-  templateUrl: './logout.component.html',
-  styleUrls: ['./logout.component.css']
+  selector: 'app-registrarse',
+  templateUrl: './registrarse.component.html',
+  styleUrls: ['./registrarse.component.css']
 })
-export class LogoutComponent implements OnInit {
+export class RegistrarseComponent implements OnInit {
 
   constructor(private datosPortfolio:PortfolioAlexisService,
     /*private userService: UserService,*/
@@ -20,7 +20,7 @@ export class LogoutComponent implements OnInit {
   onClick(){
     this.datosPortfolio.logout()
       .then(() => {
-        this.router.navigate(['/inicio']);
+        this.router.navigate(['/register']);
       })
       .catch(error => console.log(error));
   }

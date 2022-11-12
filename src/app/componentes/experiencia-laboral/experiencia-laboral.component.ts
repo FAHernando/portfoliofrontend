@@ -26,7 +26,7 @@ export class ExperienciaLaboralComponent implements OnInit {
     this.cargarData();
   }
   cargarData(): void {
-    this.trabajoService.get(`https://heroku-argentinaprograma.herokuapp.com/ver/trabajos`)
+    this.trabajoService.get(`http://localhost:8080/ver/trabajos`)
     .subscribe((data:any) => {
       this.trabajoList = data;
     })

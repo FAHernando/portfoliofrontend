@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ContactoService {
   //private apiUrl = 'http://localhost:8080/delete/mensaje/'
-  private apiUrl = 'https://heroku-argentinaprograma.herokuapp.com/delete/'
+  private apiUrl = 'https://heroku-argentinaprograma.herokuapp.com/delete/mensaje/'
   constructor(private http:HttpClient) { }
 
   public post(url:string, body:any){

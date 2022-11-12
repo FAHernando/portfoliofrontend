@@ -14,10 +14,10 @@ export class EstudioService {
   }
  
 
-  /*private apiUrl = 'http://localhost:8080/delete/estudio/'
-  private urlApi = 'http://localhost:8080/ver/estudio/'
-  private urlPost = /*'https://crossorigin.me/*//*'http://localhost:8080/modificar/estudio/'
-  private apiServerUrl= 'http://localhost:8080'*/
+  //private apiUrl = 'http://localhost:8080/delete/estudio/'
+  //private urlApi = 'http://localhost:8080/ver/estudio/'
+  //private urlPost = /*'https://crossorigin.me/*/'http://localhost:8080/modificar/estudio/'
+  //private apiServerUrl= 'http://localhost:8080'
 
   private apiUrl = 'https://heroku-argentinaprograma.herokuapp.com/delete/estudio/'
   private urlApi = 'https://heroku-argentinaprograma.herokuapp.com/ver/estudio/'

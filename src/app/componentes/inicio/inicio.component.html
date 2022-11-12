@@ -1,0 +1,93 @@
+<div class="nav-bar">
+<app-registrarse></app-registrarse>
+</div>          
+<app-cabecera></app-cabecera>
+<section class="trabajo" id="estudios">
+    <h1><span>──</span> Nivel Académico <span>──</span></h1>
+    
+<div class="container">
+    <div *ngFor="let educacion of educacionList">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header uno">
+                <h4>{{educacion.instituto}}</h4>
+                </div>
+                <div class="card-body uno">
+                    <img [src]="educacion.imagen" widht="250" height="100" class="rounded float-end uno" alt="">
+
+                    <h5 class="card-title">{{educacion.carrera}}</h5>
+                    
+                    <p class="card-text">{{educacion.grado}}</p>
+                    <div>
+                    <a [href]="educacion.web" class="btn btn-primary">Sitio Web</a>
+                    
+                    </div>
+                </div>
+                <div class="card-footer-second">
+                    <p><time>{{educacion.comienzo}}</time> - <time>{{educacion.fin}}</time></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+<app-acerca-de></app-acerca-de>
+<section class="trabajo" id="experiencias">
+    <h1><span>──</span> Experiencia Laboral <span>──</span></h1>
+    
+<div class="container">
+    <div *ngFor="let trabajo of trabajoList">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                <h4>{{trabajo.empresa}}</h4>
+                </div>
+                <div class="card-body">
+                    
+                    <img [src]="trabajo.imagen" widht="250" height="150" class="rounded float-end" alt="">
+                    
+                    <h5 class="card-title">{{trabajo.puesto}}</h5>
+                    
+                    <p class="card-text">{{trabajo.descripcion}}</p>
+                    
+                    <div>
+                    <a [href]="trabajo.web" class="btn btn-primary">Sitio Web</a>
+                    
+                    </div>
+                </div>
+                <div class="card-footer-second">
+                    <p><time>{{trabajo.comienzo}}</time> - <time>{{trabajo.fin}}</time></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+<app-hard-soft-skill></app-hard-soft-skill>
+<section>
+    <form [formGroup]="formContacto" (submit)="enviar()" id="contacto">
+        <a name="contacto"><h2><span>──</span> Contacto <span>──</span></h2></a>
+        <div class="form-example">
+            <input formControlName="nombre" data-bs-toggle="mensaje" title="Completa el campo" type="text"  placeholder="Nombre">
+        </div>
+        <div class="form-example">
+            <input formControlName="email" data-bs-toggle="mensaje" title="Completa el campo" type="email"  placeholder="Email">
+        </div>
+        <div class="form-example">
+            <input formControlName="telefono" data-bs-toggle="mensaje" title="Completa el campo" type="number" placeholder="Teléfono sin el código de área">
+        </div>
+        <div class="form-example">
+            <textarea formControlName="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Borrar</button> 
+        
+    </form>
+</section>
+<app-pie></app-pie>
+

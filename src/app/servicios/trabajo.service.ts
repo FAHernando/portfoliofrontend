@@ -9,10 +9,10 @@ import { Trabajo } from '../model/trabajo';
 export class TrabajoService {
 
 
-  /*private apiUrl = 'http://localhost:8080/delete/trabajo/'
-  private urlApi = 'http://localhost:8080/ver/trabajo/'
-  private urlPost = /*'https://crossorigin.me/*//*'http://localhost:8080/modificar/trabajo/'
-  private apiServerUrl= 'http://localhost:8080'*/
+  //private apiUrl = 'http://localhost:8080/delete/trabajo/'
+  //private urlApi = 'http://localhost:8080/ver/trabajo/'
+  //private urlPost = /*'https://crossorigin.me/*/'http://localhost:8080/modificar/trabajo/'
+  //private apiServerUrl= 'http://localhost:8080'
 
   private apiUrl = 'https://heroku-argentinaprograma.herokuapp.com/delete/trabajo/'
   private urlApi = 'https://heroku-argentinaprograma.herokuapp.com/ver/trabajo/'

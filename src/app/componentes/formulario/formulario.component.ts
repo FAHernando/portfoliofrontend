@@ -50,7 +50,7 @@ export class FormularioComponent implements OnInit {
     })
   }
   public enviarData(){
-    this.contacto.post('https://heroku-argentinaprograma.herokuapp.com/nuevo/mensaje',
+    this.contacto.post('http://localhost:8080/nuevo/mensaje',
     { 
       nombre:this.formContacto.value.nombre,
       email:this.formContacto.value.email,

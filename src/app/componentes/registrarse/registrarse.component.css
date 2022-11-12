@@ -1,0 +1,6 @@
+.btn-dark:hover{
+    background: linear-gradient(-90deg, rgba(233, 5, 5, 0.4), rgb(253, 72, 0));
+    border-radius: 10px;
+    text-shadow: 2px 3px 6px black;
+    box-shadow: 2px 5px 10px rgb(44, 44, 44);
+}

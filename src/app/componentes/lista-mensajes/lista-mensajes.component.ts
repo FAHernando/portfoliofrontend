@@ -16,7 +16,7 @@ export class ListaMensajesComponent implements OnInit {
     this.cargarMensajes();
   }
   cargarMensajes(): void {
-    this.contacto.get(`https://heroku-argentinaprograma.herokuapp.com/ver/mensajes`)
+    this.contacto.get(`http://localhost:8080/ver/mensajes`)
     .subscribe((data:any) => {
       this.contactoList = data;
     })

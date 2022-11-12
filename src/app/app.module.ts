@@ -27,6 +27,8 @@ import { ModificarTrabajoComponent } from './componentes/modificar-trabajo/modif
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardSoftSkillComponent } from './componentes/hard-soft-skill/hard-soft-skill.component';
+import { InicioComponent } from './componentes/inicio/inicio.component';
+import { RegistrarseComponent } from './componentes/registrarse/registrarse.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { HardSoftSkillComponent } from './componentes/hard-soft-skill/hard-soft-
     ExperienciaLaboralComponent,
     AgregarTrabajoComponent,
     ModificarTrabajoComponent,
-    HardSoftSkillComponent
+    HardSoftSkillComponent,
+    InicioComponent,
+    RegistrarseComponent
   ],
   imports: [
     

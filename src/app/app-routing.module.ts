@@ -13,11 +13,14 @@ import { ExperienciaLaboralComponent } from './componentes/experiencia-laboral/e
 import { EstudiosComponent } from './componentes/estudios/estudios.component';
 import { FormularioComponent } from './componentes/formulario/formulario.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
-
+import { RegistrarseComponent } from './componentes/registrarse/registrarse.component';
+import { InicioComponent } from './componentes/inicio/inicio.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component'
 
 const routes: Routes = [
-{ path: '', redirectTo: '/main', pathMatch: 'full' },
-  { path: 'main', component: MainComponent, ...canActivate(() => redirectUnauthorizedTo(['/register']))},
+  
+  { path: '', redirectTo: '/main', pathMatch: 'full' },
+  { path: 'main', component: MainComponent, ...canActivate(() => redirectUnauthorizedTo(['/inicio']))},
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent},
   { path: 'lista-mensajes', component: ListaMensajesComponent},
@@ -28,7 +31,10 @@ const routes: Routes = [
   { path: 'experiencia-laboral', component: ExperienciaLaboralComponent},
   { path: 'estudios', component: EstudiosComponent},
   { path: 'contacto', component: FormularioComponent},
-  { path: 'acerca', component: AcercaDeComponent}
+  { path: 'acerca', component: AcercaDeComponent},
+  { path: 'registrarse', component: RegistrarseComponent},
+  { path: 'inicio', component: InicioComponent},
+  { path: 'navbar', component: NavbarComponent}
 ];
 
 @NgModule({
